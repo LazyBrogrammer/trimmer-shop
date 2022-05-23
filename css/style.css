@@ -7,17 +7,28 @@ body {
   font-family: 'Space Mono', monospace;
 }
 
+.container {
+  width: 100vw;
+}
+
 nav {
   width: 100%;
   height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #d0a97d;
+  background-color: #E5CFA4;
 }
 
 nav .logo {
-  text-align: center;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+nav .logo img {
+  margin-left: 10px;
+  height: 100px;
+  transform: rotate(90deg);
 }
 
 nav .logo a {
@@ -26,14 +37,34 @@ nav .logo a {
 }
 
 nav .navbar {
-  width: 40%;
+  width: 44%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav .navbar .telephone {
-  width: 180px;
-  height: 20px;
+  margin-right: 10px;
+  position: relative;
+}
+
+nav .navbar .telephone::after {
+  position: absolute;
+  bottom: -7px;
+  content: '';
+  width: 0%;
+  height: 3px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+nav .navbar .telephone:hover {
+  transition: 0.2s;
+}
+
+nav .navbar .telephone:hover::after {
+  width: 100%;
+  background-color: black;
 }
 
 nav .navbar .telephone a {
@@ -46,18 +77,38 @@ nav .navbar .telephone a {
   align-items: center;
 }
 
-nav .navbar .telephone a:hover {
-  color: #585a60;
-  transition: 0.3s;
-}
-
 nav .navbar .telephone a i {
   display: inline;
+  margin-right: 5px;
 }
 
 nav .navbar .telephone a i p {
   display: inline;
   align-items: center;
+}
+
+nav .navbar .instagram {
+  margin-right: 10px;
+  position: relative;
+}
+
+nav .navbar .instagram::after {
+  position: absolute;
+  bottom: -7px;
+  content: '';
+  width: 0%;
+  height: 3px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+nav .navbar .instagram:hover {
+  transition: 0.2s;
+}
+
+nav .navbar .instagram:hover::after {
+  width: 100%;
+  background-color: black;
 }
 
 nav .navbar .instagram a {
@@ -70,13 +121,9 @@ nav .navbar .instagram a {
   align-items: center;
 }
 
-nav .navbar .instagram a:hover {
-  color: #6D757A;
-  transition: 0.3s;
-}
-
 nav .navbar .instagram a i {
   font-weight: 900;
+  margin-right: 5px;
 }
 
 nav .navbar .instagram a p {
@@ -86,8 +133,27 @@ nav .navbar .instagram a p {
 }
 
 nav .navbar .telegram {
-  min-width: 100px;
   transition: 0.2ms;
+  position: relative;
+}
+
+nav .navbar .telegram::after {
+  position: absolute;
+  bottom: -7px;
+  content: '';
+  width: 0%;
+  height: 3px;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+nav .navbar .telegram:hover {
+  transition: 0.2s;
+}
+
+nav .navbar .telegram:hover::after {
+  width: 100%;
+  background-color: black;
 }
 
 nav .navbar .telegram a {
@@ -101,8 +167,11 @@ nav .navbar .telegram a {
 }
 
 nav .navbar .telegram a:hover {
-  color: #6D757A;
   transition: 0.2s;
+}
+
+nav .navbar .telegram a i {
+  margin-right: 5px;
 }
 
 nav .navbar .telegram a p {
@@ -111,18 +180,77 @@ nav .navbar .telegram a p {
   font-weight: 900;
 }
 
-main img {
-  height: 60vh;
+main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
+  background-color: black;
+}
+
+main .left {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  width: calc((100%)/3);
+}
+
+main .left img {
+  height: 20vh;
+}
+
+main .middle {
+  display: flex;
+  justify-content: center;
+  width: calc((100%)/3);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+main .middle img {
+  height: 85vh;
+}
+
+main .right {
+  width: calc((100%)/3);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .right img {
+  height: 20vh;
+}
+
+.product {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+}
+
+.product h2 {
+  color: #E5CFA4;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.product .img__product img {
+  width: 100%;
 }
 
 @media screen and (max-width: 480px) {
   nav .navbar {
-    width: 70%;
+    width: 65%;
   }
-  nav .navbar .instagram a i p {
+  nav .navbar .instagram a p {
     display: none;
   }
-  nav .navbar .telegram a i p {
+  nav .navbar .telegram a p {
     display: none;
   }
 }
