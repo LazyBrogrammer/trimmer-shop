@@ -159,30 +159,24 @@ main {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-    // margin: 0 auto;
-    // background-color: black;
+    background-color: black;
     .left {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        // width: calc((100%)/3)-10px;
         img {
             height: 15vh;
         }
     }
     .middle {
-        // display: flex;
-        // justify-content: center;
-        // width: calc((100%)/3)-10px;
-        margin-left: 10px;
-        margin-right: 10px;
+        display: flex;
+        align-items: center;
         img {
             height: 40vh;
         }
     }
     .right {
-        // width: calc((100%)/3)-10px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;

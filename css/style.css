@@ -185,6 +185,7 @@ main {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
+  background-color: black;
 }
 
 main .left {
@@ -199,8 +200,8 @@ main .left img {
 }
 
 main .middle {
-  margin-left: 10px;
-  margin-right: 10px;
+  display: flex;
+  align-items: center;
 }
 
 main .middle img {
