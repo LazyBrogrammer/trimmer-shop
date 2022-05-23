@@ -2,9 +2,25 @@
     margin: 0;
     padding: 0;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: #E5CFA4;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(30, 30, 25);
+    height: 30px;
+    border-radius: 50px;
+}
+
+
 body {
     font-family: 'Space Mono', monospace;
     overflow-x: hidden;
+    
 }
 .container {
     width: 100vw;

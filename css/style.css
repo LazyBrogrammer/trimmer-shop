@@ -3,6 +3,21 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #E5CFA4;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e1e19;
+  height: 30px;
+  border-radius: 50px;
+}
+
 body {
   font-family: 'Space Mono', monospace;
   overflow-x: hidden;
