@@ -4,6 +4,7 @@
 }
 body {
     font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
 }
 .container {
     width: 100vw;
@@ -17,12 +18,11 @@ nav {
     background-color: #E5CFA4;
     .logo {
         img {
-            margin-left: 10px;
             height: 100px;
             transform: rotate(90deg);
         }
         margin-right: 20px;
-        margin-left: 10px;
+        margin-left: 20px;
         a {
             text-decoration: none;
             color: black;
@@ -185,6 +185,13 @@ main {
             height: 15vh;
         }
     }
+    padding-bottom: 30px;
+}
+h2 {
+    background-color: black;
+    color: #E5CFA4;
+    text-align: center;
+    font-size: 40px;
 }
 
 .product {
@@ -201,6 +208,7 @@ main {
     .img__product {
         img {
             width: 100%;
+            margin-top: 30px;
         }
     }
 }
@@ -227,7 +235,5 @@ main {
 
         }
     }
-    main {
-    
-    }
+   
 }

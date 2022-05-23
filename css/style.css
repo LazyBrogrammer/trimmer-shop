@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Space Mono', monospace;
+  overflow-x: hidden;
 }
 
 .container {
@@ -22,11 +23,10 @@ nav {
 
 nav .logo {
   margin-right: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 nav .logo img {
-  margin-left: 10px;
   height: 100px;
   transform: rotate(90deg);
 }
@@ -186,6 +186,7 @@ main {
   justify-content: space-around;
   padding-top: 30px;
   background-color: black;
+  padding-bottom: 30px;
 }
 
 main .left {
@@ -219,6 +220,13 @@ main .right img {
   height: 15vh;
 }
 
+h2 {
+  background-color: black;
+  color: #E5CFA4;
+  text-align: center;
+  font-size: 40px;
+}
+
 .product {
   width: 100%;
   margin: 0 auto;
@@ -235,6 +243,7 @@ main .right img {
 
 .product .img__product img {
   width: 100%;
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 480px) {
