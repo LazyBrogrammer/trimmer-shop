@@ -183,10 +183,8 @@ nav .navbar .telegram a p {
 main {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 30px;
-  margin: 0 auto;
-  background-color: black;
 }
 
 main .left {
@@ -194,27 +192,22 @@ main .left {
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  width: calc((100%)/3);
 }
 
 main .left img {
-  height: 20vh;
+  height: 15vh;
 }
 
 main .middle {
-  display: flex;
-  justify-content: center;
-  width: calc((100%)/3);
   margin-left: 10px;
   margin-right: 10px;
 }
 
 main .middle img {
-  height: 85vh;
+  height: 70vh;
 }
 
 main .right {
-  width: calc((100%)/3);
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -222,7 +215,7 @@ main .right {
 }
 
 main .right img {
-  height: 20vh;
+  height: 15vh;
 }
 
 .product {

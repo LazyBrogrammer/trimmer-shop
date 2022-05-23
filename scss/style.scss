@@ -157,38 +157,38 @@ nav {
 main {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 30px;
-    margin: 0 auto;
-    background-color: black;
+    // margin: 0 auto;
+    // background-color: black;
     .left {
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
-        width: calc((100%)/3);
+        // width: calc((100%)/3)-10px;
         img {
-            height: 20vh;
+            height: 15vh;
         }
     }
     .middle {
-        display: flex;
-        justify-content: center;
-        width: calc((100%)/3);
+        // display: flex;
+        // justify-content: center;
+        // width: calc((100%)/3)-10px;
         margin-left: 10px;
         margin-right: 10px;
         img {
-            height: 85vh;
+            height: 70vh;
         }
     }
     .right {
-        width: calc((100%)/3);
+        // width: calc((100%)/3)-10px;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
         align-items: center;
         img {
-            height: 20vh;
+            height: 15vh;
         }
     }
 }
