@@ -3,37 +3,52 @@
   padding: 0;
 }
 
+body {
+  font-family: 'Space Mono', monospace;
+}
+
 nav {
   width: 100%;
+  height: 50px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
-  background-color: #d7bbbb;
+  background-color: #d0a97d;
 }
 
 nav .logo {
   text-align: center;
-  background-color: yellow;
 }
 
 nav .logo a {
   text-decoration: none;
+  color: black;
 }
 
 nav .navbar {
-  width: 30%;
+  width: 40%;
   display: flex;
   justify-content: space-between;
 }
 
 nav .navbar .telephone {
-  width: 200px;
+  width: 180px;
   height: 20px;
 }
 
 nav .navbar .telephone a {
   text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  font-weight: 900;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar .telephone a:hover {
+  color: #585a60;
+  transition: 0.3s;
 }
 
 nav .navbar .telephone a i {
@@ -41,6 +56,74 @@ nav .navbar .telephone a i {
 }
 
 nav .navbar .telephone a i p {
-  display: inline-block;
+  display: inline;
+  align-items: center;
+}
+
+nav .navbar .instagram a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  font-weight: 900;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar .instagram a:hover {
+  color: #6D757A;
+  transition: 0.3s;
+}
+
+nav .navbar .instagram a i {
+  font-weight: 900;
+}
+
+nav .navbar .instagram a p {
+  display: inline;
+  font-family: 'Space Mono', monospace;
+  font-weight: 900;
+}
+
+nav .navbar .telegram {
+  min-width: 100px;
+  transition: 0.2ms;
+}
+
+nav .navbar .telegram a {
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+  font-weight: 900;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+nav .navbar .telegram a:hover {
+  color: #6D757A;
+  transition: 0.2s;
+}
+
+nav .navbar .telegram a p {
+  display: inline;
+  font-family: 'Space Mono', monospace;
+  font-weight: 900;
+}
+
+main img {
+  height: 60vh;
+}
+
+@media screen and (max-width: 480px) {
+  nav .navbar {
+    width: 70%;
+  }
+  nav .navbar .instagram a i p {
+    display: none;
+  }
+  nav .navbar .telegram a i p {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
