@@ -4,7 +4,43 @@
 }
 
 nav {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  background-color: #d7bbbb;
+}
+
+nav .logo {
+  text-align: center;
+  background-color: yellow;
+}
+
+nav .logo a {
+  text-decoration: none;
+}
+
+nav .navbar {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .navbar .telephone {
+  width: 200px;
+  height: 20px;
+}
+
+nav .navbar .telephone a {
+  text-decoration: none;
+}
+
+nav .navbar .telephone a i {
+  display: inline;
+}
+
+nav .navbar .telephone a i p {
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,44 @@
     padding: 0;
 }
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(215, 187, 187);
+    .logo {
+        text-align: center;
+        background-color: yellow;
+        a {
+            text-decoration: none;
+        }
+    }
+    .navbar {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        .telephone {
+            width: 200px;
+            height: 20px;
+            a {
+                text-decoration: none;
+                i {
+                    display: inline;
+                    p {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .instagram {
+
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+
+    }
 }
