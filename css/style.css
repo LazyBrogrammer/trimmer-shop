@@ -212,7 +212,7 @@ main .left {
 }
 
 main .left img {
-  height: 15vh;
+  height: 25vh;
 }
 
 main .middle {
@@ -232,7 +232,7 @@ main .right {
 }
 
 main .right img {
-  height: 15vh;
+  height: 25vh;
 }
 
 h2 {
@@ -270,6 +270,15 @@ h2 {
   }
   nav .navbar .telegram a p {
     display: none;
+  }
+  main .left img {
+    height: 15vh;
+  }
+  main .middle img {
+    height: 45vh;
+  }
+  main .right img {
+    height: 15vh;
   }
 }
 /*# sourceMappingURL=style.css.map */

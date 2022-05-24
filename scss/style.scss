@@ -182,7 +182,7 @@ main {
         flex-direction: column;
         align-items: center;
         img {
-            height: 15vh;
+            height: 25vh;
         }
     }
     .middle {
@@ -198,7 +198,7 @@ main {
         flex-direction: column;
         align-items: center;
         img {
-            height: 15vh;
+            height: 25vh;
         }
     }
     padding-bottom: 30px;
@@ -251,5 +251,21 @@ h2 {
 
         }
     }
-   
+   main {
+       .left {
+           img {
+               height: 15vh;
+           }
+       }
+       .middle {
+        img {
+            height: 45vh;
+            }
+        }
+        .right {
+            img {
+                height: 15vh;
+            }
+        }
+   }
 }
