@@ -25,16 +25,15 @@ body {
 
 body .scroll-top {
   position: fixed;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
   background-color: #E5CFA4;
   bottom: 10px;
   right: 5px;
 }
 
 body .scroll-top i {
-  margin-left: 9px;
-  margin-top: 7px;
+  margin-left: 6px;
   color: black;
 }
 
