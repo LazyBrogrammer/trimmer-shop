@@ -263,7 +263,7 @@ h2 {
         // width: 90%;
         // margin: 0 auto;
         h3 {
-            text-align: center;
+            // text-align: center;
             color: #E5CFA4;
         }
         hr {
@@ -273,9 +273,11 @@ h2 {
     }
 }
 .form {
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     form {
+        display: flex;
+        flex-direction: column;
         label {
             color: #E5CFA4;
             margin: 0 auto;
@@ -285,6 +287,7 @@ h2 {
             height: 30px;
             border-radius: 5px;
             font-size: 18px;
+            margin: 0 auto;
         }
         .button {
             width: 100px;
@@ -292,7 +295,7 @@ h2 {
             font-weight: 700;
             transition: 0.2s;
             outline: none;
-            margin-left: 80px;
+            margin: 0 auto;
             &:active {
                 background-color: #867a63;
                 transition: 0.2s;
@@ -345,10 +348,10 @@ h2 {
    .about__product {
        width: 90%;
    }
-   .form {
-       width: 60%;
-       form {
-           width: 100%;
-       }
-   }
+//    .form {
+//        width: 100%;
+//        form {
+//            width: 100%;
+//        }
+//    }
 }

@@ -292,7 +292,6 @@ h2 {
 }
 
 .about__product .description h3 {
-  text-align: center;
   color: #E5CFA4;
 }
 
@@ -302,8 +301,13 @@ h2 {
 }
 
 .form {
-  width: 30%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
 }
 
 .form form label {
@@ -316,6 +320,7 @@ h2 {
   height: 30px;
   border-radius: 5px;
   font-size: 18px;
+  margin: 0 auto;
 }
 
 .form form .button {
@@ -324,7 +329,7 @@ h2 {
   font-weight: 700;
   transition: 0.2s;
   outline: none;
-  margin-left: 80px;
+  margin: 0 auto;
 }
 
 .form form .button:active {
@@ -358,12 +363,6 @@ h2 {
   }
   .about__product {
     width: 90%;
-  }
-  .form {
-    width: 60%;
-  }
-  .form form {
-    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
