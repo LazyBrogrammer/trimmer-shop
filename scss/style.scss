@@ -47,6 +47,7 @@ nav {
     align-items: center;
     background-color: #e5cfa4;
     position: fixed;
+    z-index: 999;
     .languages {
         display: flex;
         justify-content: space-between;
@@ -200,6 +201,7 @@ main {
     justify-content: space-around;
     padding-top: 30px;
     background-color: black;
+    padding-top: 80px;
     .left {
         display: flex;
         justify-content: space-between;
@@ -270,7 +272,34 @@ h2 {
         }
     }
 }
-
+.form {
+    width: 90%;
+    margin: 0 auto;
+    form {
+        width: 100%;
+        margin: 0 auto;
+        label {
+            color: #E5CFA4;
+        }
+        input {
+            width: 250px;
+            height: 30px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        .button {
+            width: 100px;
+            background-color: #E5CFA4;
+            font-weight: 700;
+            transition: 0.2s;
+            outline: none;
+            &:active {
+                background-color: #867a63;
+                transition: 0.2s;
+            }
+        }
+    }
+}
 @media screen and (max-width: 480px) {
     nav {
         .navbar {
