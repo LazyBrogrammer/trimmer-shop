@@ -20,6 +20,19 @@
 body {
     font-family: 'Space Mono', monospace;
     overflow-x: hidden;
+    .scroll-top {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        background-color: #E5CFA4;
+        bottom: 10px;
+        right: 5px;
+        i {
+           margin-left: 9px;
+           margin-top: 7px;
+           color: rgb(0, 0, 0);
+        }
+    }
 }
 .container {
     width: 100vw;
@@ -30,7 +43,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #E5CFA4;
+    background-color: #e5cfa4;
     .logo {
         img {
             height: 100px;

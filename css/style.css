@@ -23,6 +23,21 @@ body {
   overflow-x: hidden;
 }
 
+body .scroll-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: #E5CFA4;
+  bottom: 10px;
+  right: 5px;
+}
+
+body .scroll-top i {
+  margin-left: 9px;
+  margin-top: 7px;
+  color: black;
+}
+
 .container {
   width: 100vw;
 }
@@ -33,7 +48,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #E5CFA4;
+  background-color: #e5cfa4;
 }
 
 nav .logo {
