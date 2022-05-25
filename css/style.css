@@ -61,7 +61,7 @@ nav .languages {
   width: 80px;
 }
 
-nav .languages .uzbek a img {
+nav .languages .uzbek img {
   width: 30px;
 }
 
@@ -69,7 +69,7 @@ nav .languages .russian {
   width: 30px;
 }
 
-nav .languages .russian a img {
+nav .languages .russian img {
   width: 30px;
 }
 
@@ -295,11 +295,6 @@ h2 {
   color: #E5CFA4;
 }
 
-.about__product .description hr {
-  width: 90%;
-  margin: 0 auto;
-}
-
 .form {
   width: 100%;
   margin: 0 auto;
@@ -321,6 +316,8 @@ h2 {
   border-radius: 5px;
   font-size: 18px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .form form .button {
