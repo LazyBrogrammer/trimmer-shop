@@ -10,17 +10,17 @@
     <title>Hair Clipper</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <div class="scroll-top" onclick="scrollToTop()">
+<body onload="uzb()">
+    <div class="scroll-top">
         <i class="fa-solid fa-angle-up fa-3x"></i>
     </div>
     <div class="container">
         <nav>
             <div class="languages">
-               <div class="uzbek">
+               <div class="uzbek" onclick="uzb()">
                     <img src="./images/uzbekistan.png" alt="uzbek languages" >
                </div>
-               <div class="russian">
+               <div class="russian" onclick="rus()">
                     <img src="./images/russia.png" alt="">
                </div>
             </div>
@@ -111,48 +111,6 @@
                 </h3>
                 <br>
                 <p class="description-tech-p">
-                    Model: BZ-T99
-                    <br>
-                    Material: titanium keramika + ABS plastik
-                    <br>
-                    
-                    Hajmi: 143x40.8x23.9mm
-                    <br>
-                    
-                    Nominal quvvat: 5 Vt
-                    <br>
-                    
-                    Nominal kuchlanish: DC 3.7V
-                    <br>
-                    
-                    Kirish: AC 100-240V / DC 4.2==1.0A
-                    <br>
-                    
-                    Tezlik: 6800+/-10% RPM
-                    <br>
-                    
-                    Foydalanish vaqti: taxminan 2 soat
-                    <br>
-                    
-                    Zaryadlash vaqti: Taxminan 3 soat
-                    <br>
-                    
-                    Batareya: 1200mAh 18500 lityum batareya (qo'shilmagan)
-                    <br>
-                    
-                    Paketga quyidagilar kiradi:
-                    <br>
-                    
-                    1 dona soch kesish mashinasi
-                    <br>
-                    
-                    1 dona batareya zaryadlovchi
-                    <br>
-                    
-                    3 dona qo'llanma taroqlari
-                    <br>
-                    
-                    1 dona tozalash cho'tkasi
                 </p>
             </div>
         </div>
@@ -172,7 +130,7 @@
                 <input type="tel" id="telnumber" name="lname" placeholder="    +998 99 123 45 67">
                 <br>
                 <br>
-                <input class="button" type="submit" class="submit">
+                <input type="submit" class="submit" style="background-color: #E5CFA4">
               </form> 
         </div>
         <br><br>

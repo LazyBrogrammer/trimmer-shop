@@ -1,11 +1,7 @@
-function scrollToTop() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    })
-}
+"use strict";
 
-let instagram = document.querySelector('.instagram-p'),
+let scrollToTop =document.querySelector('.scroll-top'),
+    instagram = document.querySelector('.instagram-p'),
     telegram = document.querySelector('.telegram-p'),
     russian = document.querySelector('.russian'),
     uzbek = document.querySelector('.uzbek'),
@@ -13,14 +9,23 @@ let instagram = document.querySelector('.instagram-p'),
     descriptionH3 = document.querySelector('.description-h3'),
     descriptionP = document.querySelector('.description-p'),
     descriptionTech = document.querySelector('.description-tech'),
-    descriptionTechP = document.querySelector('.description-tech-p')
+    descriptionTechP = document.querySelector('.description-tech-p'),
     orderH2 = document.querySelector('.order-h2'),
     fName = document.querySelector('.fname'),
     tel = document.querySelector('.tel'),
     fNamePlace = document.querySelector('.fname-place');
 
+scrollToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
 
-russian.addEventListener('click', () => {
+
+
+
+let rus = () => {
     instagram.textContent = "Инстаграм";
     telegram.textContent = "Телеграм";
     aboutProduct.textContent = " О продукте";
@@ -34,41 +39,47 @@ russian.addEventListener('click', () => {
     `;
     descriptionTech.textContent = "Технические характеристики:";
     descriptionTechP.innerHTML = `
-        Материал: титановая керамика + АБС-пластик
-        <br>
-        Размер: 143x40,8x23,9 мм
-        <br>
-        Номинальная мощность: 5 Вт
-        <br>
-        Номинальное напряжение: 3,7 В постоянного тока
-        <br>
-        Вход: 100–240 В переменного тока / 4,2 постоянного тока == 1,0 А
-        <br>
-        Скорость: 6800+/-10% об/мин
-        <br>
-        Время использования: около 2 часов
-        <br>
-        Время зарядки: около 3 часов
-        <br>
-        Батарея: литиевая батарея 1200 мАч 18500 (не входит в комплект)
-        <br>
-        Пакет включает в себя:
-        <br>
-        1 шт. машинка для стрижки волос
-        <br>
-        1 шт. зарядное устройство
-        <br>
-        3 направляющих гребня
-        <br>
-        1 шт. щетка для чистки
+    Модель: БЗ-Т99
+    <br>
+    Материал: титановая керамика + АБС-пластик
+    <br>
+    Размер: 143x40,8x23,9 мм
+    <br>
+    Номинальная мощность: 5 Вт
+    <br>
+    Номинальное напряжение: 3,7 В постоянного тока
+    <br>
+    Вход: 100–240 В переменного тока / 4,2 постоянного тока == 1,0 А
+    <br>
+    Скорость: 6800+/-10% об/мин
+    <br>
+    Время использования: около 2 часов
+    <br>
+    Время зарядки: около 3 часов
+    <br>
+    Батарея: литиевая батарея 1200 мАч 18500 (не входит в комплект)
+    <br>
+    <br>
+    <h3>
+    Пакет включает в себя:
+    </h3>
+    <br>
+    1 шт. машинка для стрижки волос
+    <br>
+    1 шт. зарядное устройство
+    <br>
+    3 направляющих гребня
+    <br>
+    1 шт. щетка для чистки
     `;
     orderH2.textContent = 'Заказать';
     fName.textContent = "Введите ваше имя:";
     tel.textContent = "Введите свой номер телефона:";
     fNamePlace.placeholder = 'Введите ваше имя:';
-})
+};
 
-uzbek.addEventListener('click', () => {
+
+let uzb = () => {
     instagram.textContent = "Instagram";
     telegram.textContent = "Telegram";
     aboutProduct.textContent = "Mahsulot haqida";
@@ -82,50 +93,41 @@ uzbek.addEventListener('click', () => {
     `;
     descriptionTech.textContent = "Texnik tavsifi:";
     descriptionTechP.innerHTML = `
-        Model: BZ-T99
-        <br>
-        Material: titanium keramika + ABS plastik
-        <br>
-        
-        Hajmi: 143x40.8x23.9mm
-        <br>
-        
-        Nominal quvvat: 5 Vt
-        <br>
-        
-        Nominal kuchlanish: DC 3.7V
-        <br>
-        
-        Kirish: AC 100-240V / DC 4.2==1.0A
-        <br>
-        
-        Tezlik: 6800+/-10% RPM
-        <br>
-        
-        Foydalanish vaqti: taxminan 2 soat
-        <br>
-        
-        Zaryadlash vaqti: Taxminan 3 soat
-        <br>
-        
-        Batareya: 1200mAh 18500 lityum batareya (qo'shilmagan)
-        <br>
-        
-        Paketga quyidagilar kiradi:
-        <br>
-        
-        1 dona soch kesish mashinasi
-        <br>
-        
-        1 dona batareya zaryadlovchi
-        <br>
-        
-        3 dona qo'llanma taroqlari
-        <br>
-        
-        1 dona tozalash cho'tkasi
+    Model: BZ-T99
+    <br>
+    Material: titanium keramika + ABS plastik
+    <br>
+    Hajmi: 143x40.8x23.9mm
+    <br>
+    Nominal quvvat: 5 Vt
+    <br>
+    Nominal kuchlanish: DC 3.7V
+    <br>
+    Kirish: AC 100-240V / DC 4.2==1.0A
+    <br>
+    Tezlik: 6800+/-10% RPM
+    <br>
+    Foydalanish vaqti: taxminan 2 soat
+    <br>
+    Zaryadlash vaqti: Taxminan 3 soat
+    <br>
+    Batareya: 1200mAh 18500 lityum batareya (qo'shilmagan)
+    <br>
+    <br>
+    <h3>
+    Paketga quyidagilar kiradi:
+    </h3>
+    <br>         
+    1 dona soch kesish mashinasi
+    <br>                
+    1 dona batareya zaryadlovchi
+    <br>
+    3 dona qo'llanma taroqlari
+    <br>
+    1 dona tozalash cho'tkasi
     `;
     orderH2.textContent = 'Buyurtma qilish';
     fName.textContent = "Ismingizni kiriting:";
     fNamePlace.placeholder = 'Ismingizni kiriting:';
-})
+    tel.textContent = "Telefon raqamingizni kiriting:";
+};
