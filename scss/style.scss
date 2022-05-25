@@ -273,13 +273,12 @@ h2 {
     }
 }
 .form {
-    width: 90%;
+    width: 30%;
     margin: 0 auto;
     form {
-        width: 100%;
-        margin: 0 auto;
         label {
             color: #E5CFA4;
+            margin: 0 auto;
         }
         input {
             width: 250px;
@@ -293,7 +292,12 @@ h2 {
             font-weight: 700;
             transition: 0.2s;
             outline: none;
+            margin-left: 80px;
             &:active {
+                background-color: #867a63;
+                transition: 0.2s;
+            }
+            &:hover {
                 background-color: #867a63;
                 transition: 0.2s;
             }
@@ -340,5 +344,11 @@ h2 {
    }
    .about__product {
        width: 90%;
+   }
+   .form {
+       width: 60%;
+       form {
+           width: 100%;
+       }
    }
 }

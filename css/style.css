@@ -302,17 +302,13 @@ h2 {
 }
 
 .form {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.form form {
-  width: 100%;
+  width: 30%;
   margin: 0 auto;
 }
 
 .form form label {
   color: #E5CFA4;
+  margin: 0 auto;
 }
 
 .form form input {
@@ -328,9 +324,15 @@ h2 {
   font-weight: 700;
   transition: 0.2s;
   outline: none;
+  margin-left: 80px;
 }
 
 .form form .button:active {
+  background-color: #867a63;
+  transition: 0.2s;
+}
+
+.form form .button:hover {
   background-color: #867a63;
   transition: 0.2s;
 }
@@ -356,6 +358,12 @@ h2 {
   }
   .about__product {
     width: 90%;
+  }
+  .form {
+    width: 60%;
+  }
+  .form form {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
