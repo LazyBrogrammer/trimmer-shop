@@ -20,6 +20,7 @@
 body {
     font-family: 'Space Mono', monospace;
     overflow-x: hidden;
+    background-color: black;
     .scroll-top {
         position: fixed;
         width: 50px;
@@ -45,6 +46,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     background-color: #e5cfa4;
+    position: fixed;
     .languages {
         display: flex;
         justify-content: space-between;
@@ -232,7 +234,7 @@ h2 {
     font-size: 40px;
 }
 
-.product {
+.product-img {
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -250,7 +252,24 @@ h2 {
         }
     }
 }
-
+.about__product {
+    background-color: black;
+    color: #FFF;
+    width: 90%;
+    margin: 0 auto;
+    .description {
+        // width: 90%;
+        // margin: 0 auto;
+        h3 {
+            text-align: center;
+            color: #E5CFA4;
+        }
+        hr {
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
 
 @media screen and (max-width: 480px) {
     nav {
@@ -289,5 +308,8 @@ h2 {
                 height: 15vh;
             }
         }
+   }
+   .about__product {
+       width: 90%;
    }
 }
