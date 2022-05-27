@@ -236,6 +236,7 @@ main .left {
 
 main .left img {
   height: 25vh;
+  border-radius: 10px;
 }
 
 main .middle {
@@ -256,6 +257,7 @@ main .right {
 
 main .right img {
   height: 25vh;
+  border-radius: 10px;
 }
 
 h2 {
