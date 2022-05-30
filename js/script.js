@@ -13,7 +13,8 @@ let scrollToTop =document.querySelector('.scroll-top'),
     orderH2 = document.querySelector('.order-h2'),
     fName = document.querySelector('.fname'),
     tel = document.querySelector('.tel'),
-    fNamePlace = document.querySelector('.fname-place');
+    fNamePlace = document.querySelector('.fname-place'),
+    price = document.querySelector('.price')
 
 scrollToTop.addEventListener('click', () => {
     window.scrollTo({
@@ -76,6 +77,7 @@ let rus = () => {
     fName.textContent = "Введите ваше имя:";
     tel.textContent = "Введите свой номер телефона:";
     fNamePlace.placeholder = 'Введите ваше имя:';
+    price.textContent = "Цена: 299 000 сум";
 };
 
 
@@ -130,4 +132,8 @@ let uzb = () => {
     fName.textContent = "Ismingizni kiriting:";
     fNamePlace.placeholder = 'Ismingizni kiriting:';
     tel.textContent = "Telefon raqamingizni kiriting:";
+    price.textContent = "  Narxi: 299 000 so'm";
 };
+
+
+

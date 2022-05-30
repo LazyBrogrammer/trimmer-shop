@@ -320,25 +320,30 @@ h2 {
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.form form .button {
-  width: 100px;
-  background-color: #E5CFA4;
-  font-weight: 700;
-  transition: 0.2s;
+  line-height: 28px;
+  border: 2px solid transparent;
+  border-bottom-color: #777;
+  padding: .2rem 0;
   outline: none;
-  margin: 0 auto;
+  background-color: transparent;
+  color: #E5CFA4;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.form form .button:active {
-  background-color: #867a63;
-  transition: 0.2s;
+.form form input:hover, .form form input:focus {
+  outline: none;
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  border-color: #E5CFA4;
 }
 
-.form form .button:hover {
-  background-color: #867a63;
-  transition: 0.2s;
+.form form input::placeholder {
+  color: #777;
+}
+
+.form form input:focus::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
 }
 
 @media screen and (max-width: 480px) {

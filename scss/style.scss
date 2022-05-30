@@ -281,23 +281,45 @@ h2 {
             margin: 0 auto;
             padding-left: 10px;
             padding-right: 10px;
-        }
-        .button {
-            width: 100px;
-            background-color: #E5CFA4;
-            font-weight: 700;
-            transition: 0.2s;
+            line-height: 28px;
+            border: 2px solid transparent;
+            border-bottom-color: #777;
+            padding: .2rem 0;
             outline: none;
-            margin: 0 auto;
-            &:active {
-                background-color: #867a63;
-                transition: 0.2s;
+            background-color: transparent;
+            color: #E5CFA4;
+            transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+            &:hover, &:focus {
+                outline: none;
+                padding: .2rem 1rem;
+                border-radius: 1rem;
+                border-color: #E5CFA4;
             }
-            &:hover {
-                background-color: #867a63;
-                transition: 0.2s;
+            &::placeholder {
+                color: #777;
+            }
+            &:focus::placeholder {
+                opacity: 0;
+                transition: opacity .3s;
             }
         }
+        // .button {
+        //     width: 100px;
+        //     background-color: #E5CFA4;
+        //     font-weight: 700;
+        //     transition: 0.2s;
+        //     outline: none;
+        //     margin: 0 auto;
+        //     &:active {
+        //         background-color: #867a63;
+        //         transition: 0.2s;
+        //     }
+        //     &:hover {
+        //         background-color: #867a63;
+        //         transition: 0.2s;
+        //     }
+        // }
+        
     }
 }
 @media screen and (max-width: 480px) {
