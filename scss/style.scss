@@ -285,6 +285,10 @@ h2 {
             color: #E5CFA4;
             margin: 0 auto;
         }
+        .submit {
+            height: 40px;
+            border-radius: 10px;
+        }
         input {
             width: 250px;
             height: 30px;
@@ -322,9 +326,11 @@ h2 {
 
 .pop-up-succes {
     position: absolute;
+    display: none;
+    z-index: 999;
     // bottom: 200px;
-    left: calc((100%)/2 -250px);
-    width: 500px;
+    left: calc((100%)/2 - 30vw);
+    width: 60vw;
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -351,12 +357,53 @@ h2 {
     .succes-text {
         color: rgb(0, 0, 0);
         text-align: center;
-        font-size: 25px;
+        font-size: 35px;
     }
     button {
         width: 100px;
     }
 }
+
+.pop-up-fail {
+    position: absolute;
+    // display: none;
+    z-index: 999;
+    // bottom: 200px;
+    left: calc((100%)/2 - 30vw);
+    width: 60vw;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    .fail-exit-btn {
+        position: absolute;
+        top: -15px;
+        right: -15PX;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        img {
+            width: 100%;
+        }
+    }
+    .fail__img {
+        width: 150px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .fail-text {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 35px;
+    }
+    button {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     nav {
         .navbar {

@@ -409,6 +409,11 @@ h2 {
   margin: 0 auto;
 }
 
+.form form .submit {
+  height: 40px;
+  border-radius: 10px;
+}
+
 .form form input {
   width: 250px;
   height: 30px;
@@ -477,8 +482,10 @@ h2 {
 
 .pop-up-succes {
   position: absolute;
-  left: calc((100%)/2 -250px);
-  width: 500px;
+  display: none;
+  z-index: 999;
+  left: calc((100%)/2 - 30vw);
+  width: 60vw;
   height: 200px;
   background-color: white;
   border-radius: 20px;
@@ -511,10 +518,54 @@ h2 {
 .pop-up-succes .succes-text {
   color: black;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .pop-up-succes button {
+  width: 100px;
+}
+
+.pop-up-fail {
+  position: absolute;
+  z-index: 999;
+  left: calc((100%)/2 - 30vw);
+  width: 60vw;
+  height: 200px;
+  background-color: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+.pop-up-fail .fail-exit-btn {
+  position: absolute;
+  top: -15px;
+  right: -15PX;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.pop-up-fail .fail-exit-btn img {
+  width: 100%;
+}
+
+.pop-up-fail .fail__img {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.pop-up-fail .fail__img img {
+  width: 100%;
+}
+
+.pop-up-fail .fail-text {
+  color: black;
+  text-align: center;
+  font-size: 35px;
+}
+
+.pop-up-fail button {
   width: 100px;
 }
 
