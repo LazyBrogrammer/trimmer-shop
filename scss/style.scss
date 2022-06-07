@@ -48,20 +48,32 @@ nav {
     background-color: #e5cfa4;
     position: fixed;
     z-index: 999;
+    position: relative;
     .languages {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80px;
+        width: 90px;
         .uzbek {
+            width: 40px;
             img {
                 width: 30px;
+                transition: 0.2s;
+                &:active {
+                    width: 35px;
+                    transition: 0.2s;
+                }
             }
         }
         .russian {
-            width: 30px;
+            width: 40px;
+            transition: 0.2s;
             img {
                 width: 30px;
+                &:active {
+                    width: 35px;
+                    transition: 0.2s;
+                }
             }
         }
     }
@@ -307,6 +319,44 @@ h2 {
         
     }
 }
+
+.pop-up-succes {
+    position: absolute;
+    // bottom: 200px;
+    left: calc((100%)/2 -250px);
+    width: 500px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: relative;
+    .succes-exit-btn {
+        position: absolute;
+        top: -15px;
+        right: -15PX;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        img {
+            width: 100%;
+        }
+    }
+    .succes__img {
+        width: 150px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .succes-text {
+        color: rgb(0, 0, 0);
+        text-align: center;
+        font-size: 25px;
+    }
+    button {
+        width: 100px;
+    }
+}
 @media screen and (max-width: 480px) {
     nav {
         .navbar {
@@ -348,4 +398,11 @@ h2 {
    .about__product {
        width: 90%;
    }
+   .form {
+       .pop-up-succes {
+           width: 300px;
+       }
+   }
 }
+
+

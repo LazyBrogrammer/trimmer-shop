@@ -46,30 +46,18 @@ body .scroll-top i {
 nav {
   width: 100%;
   height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   background-color: #e5cfa4;
   position: fixed;
   z-index: 999;
-  position: relative;
 }
 
 nav .languages {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   width: 90px;
 }
 
@@ -79,19 +67,16 @@ nav .languages .uzbek {
 
 nav .languages .uzbek img {
   width: 30px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 nav .languages .uzbek img:active {
   width: 35px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 nav .languages .russian {
   width: 40px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -101,21 +86,14 @@ nav .languages .russian img {
 
 nav .languages .russian img:active {
   width: 35px;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
 nav .navbar {
   width: 44%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav .navbar .telephone {
@@ -129,13 +107,11 @@ nav .navbar .telephone::after {
   content: '';
   width: 0%;
   height: 3px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
 }
 
 nav .navbar .telephone:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -147,16 +123,11 @@ nav .navbar .telephone:hover::after {
 nav .navbar .telephone a {
   text-decoration: none;
   color: black;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 900;
   font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav .navbar .telephone a i {
@@ -166,9 +137,7 @@ nav .navbar .telephone a i {
 
 nav .navbar .telephone a i p {
   display: inline;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav .navbar .instagram {
@@ -182,13 +151,11 @@ nav .navbar .instagram::after {
   content: '';
   width: 0%;
   height: 3px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
 }
 
 nav .navbar .instagram:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -200,16 +167,11 @@ nav .navbar .instagram:hover::after {
 nav .navbar .instagram a {
   text-decoration: none;
   color: black;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 900;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav .navbar .instagram a i {
@@ -224,7 +186,6 @@ nav .navbar .instagram a p {
 }
 
 nav .navbar .telegram {
-  -webkit-transition: 0.2ms;
   transition: 0.2ms;
   position: relative;
 }
@@ -235,13 +196,11 @@ nav .navbar .telegram::after {
   content: '';
   width: 0%;
   height: 3px;
-  -webkit-transition: 0.5s;
   transition: 0.5s;
   border-radius: 5px;
 }
 
 nav .navbar .telegram:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -253,20 +212,14 @@ nav .navbar .telegram:hover::after {
 nav .navbar .telegram a {
   text-decoration: none;
   color: black;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   font-weight: 900;
   font-size: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 nav .navbar .telegram a:hover {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -282,11 +235,8 @@ nav .navbar .telegram a p {
 
 main {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding-top: 30px;
   background-color: black;
   padding-top: 80px;
@@ -294,19 +244,10 @@ main {
 }
 
 main .left {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .left img {
@@ -315,12 +256,8 @@ main .left img {
 }
 
 main .middle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 main .middle img {
@@ -328,19 +265,10 @@ main .middle img {
 }
 
 main .right {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
 main .right img {
@@ -358,12 +286,8 @@ h2 {
 .product-img {
   width: 100%;
   margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-color: black;
 }
 
@@ -395,13 +319,8 @@ h2 {
 }
 
 .form form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 .form form label {
@@ -424,7 +343,6 @@ h2 {
   outline: none;
   background-color: transparent;
   color: #E5CFA4;
-  -webkit-transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -435,87 +353,13 @@ h2 {
   border-color: #E5CFA4;
 }
 
-.form form input::-webkit-input-placeholder {
-  color: #777;
-}
-
-.form form input:-ms-input-placeholder {
-  color: #777;
-}
-
-.form form input::-ms-input-placeholder {
-  color: #777;
-}
-
 .form form input::placeholder {
   color: #777;
 }
 
-.form form input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
-.form form input:focus:-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
-.form form input:focus::-ms-input-placeholder {
-  opacity: 0;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
-}
-
 .form form input:focus::placeholder {
   opacity: 0;
-  -webkit-transition: opacity .3s;
   transition: opacity .3s;
-}
-
-.pop-up-succes {
-  position: absolute;
-  left: calc((100%)/2 -250px);
-  width: 500px;
-  height: 200px;
-  background-color: white;
-  border-radius: 20px;
-  position: relative;
-}
-
-.pop-up-succes .succes-exit-btn {
-  position: absolute;
-  top: -15px;
-  right: -15PX;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: white;
-}
-
-.pop-up-succes .succes-exit-btn img {
-  width: 100%;
-}
-
-.pop-up-succes .succes__img {
-  width: 150px;
-  margin: 0 auto;
-}
-
-.pop-up-succes .succes__img img {
-  width: 100%;
-}
-
-.pop-up-succes .succes-text {
-  color: black;
-  text-align: center;
-  font-size: 25px;
-}
-
-.pop-up-succes button {
-  width: 100px;
 }
 
 @media screen and (max-width: 480px) {
@@ -540,8 +384,16 @@ h2 {
   .about__product {
     width: 90%;
   }
-  .form .pop-up-succes {
-    width: 300px;
-  }
+}
+
+.pop-up-succes {
+  position: absolute;
+  width: 40vw;
+  height: 20vh;
+  background-color: white;
+}
+
+.pop-up-succes .succes {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
