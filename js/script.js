@@ -14,7 +14,10 @@ let scrollToTop =document.querySelector('.scroll-top'),
     fName = document.querySelector('.fname'),
     tel = document.querySelector('.tel'),
     fNamePlace = document.querySelector('.fname-place'),
-    price = document.querySelector('.price')
+    price = document.querySelector('.price'),
+    succesText = document.querySelector('.succes-text'),
+    failText = document.querySelector('.fail-text')
+
 
 scrollToTop.addEventListener('click', () => {
     window.scrollTo({
@@ -78,6 +81,8 @@ let rus = () => {
     tel.textContent = "Введите свой номер телефона:";
     fNamePlace.placeholder = 'Введите ваше имя:';
     price.textContent = "Цена: 299 000 сум";
+    failText.textContent = "Не удалось";
+    succesText.textContent = "Успех"
 };
 
 
@@ -133,6 +138,8 @@ let uzb = () => {
     fNamePlace.placeholder = 'Ismingizni kiriting:';
     tel.textContent = "Telefon raqamingizni kiriting:";
     price.textContent = "  Narxi: 299 000 so'm";
+    failText.textContent = "Muvaffaqiyatsiz";
+    succesText.textContent = "Muvaffaqiyatli";
 };
 
 

@@ -48,7 +48,6 @@ nav {
     background-color: #e5cfa4;
     position: fixed;
     z-index: 999;
-    position: relative;
     .languages {
         display: flex;
         justify-content: space-between;
@@ -286,10 +285,23 @@ h2 {
             margin: 0 auto;
         }
         .submit {
-            height: 40px;
+            background-color: #E5CFA4;
+            width: 200px;
+            height: 50px;
+            margin: 0 auto;
             border-radius: 10px;
+            // text-align: center;
+            color: black;
+            font-size: 25px;
+            padding-top: 5px;
+            outline: none;
+            transition: .3s;
+            &:active {
+                transform: scale(1.09);
+                transition: .3s;
+            }
         }
-        input {
+        .input {
             width: 250px;
             height: 30px;
             border-radius: 5px;
@@ -325,12 +337,10 @@ h2 {
 }
 
 .pop-up-succes {
+    // display: none;
     position: absolute;
-    display: none;
-    z-index: 999;
-    // bottom: 200px;
-    left: calc((100%)/2 - 30vw);
-    width: 60vw;
+    left: calc((100%)/2 - 25vw);
+    width: 50vw;
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
@@ -357,7 +367,7 @@ h2 {
     .succes-text {
         color: rgb(0, 0, 0);
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
     }
     button {
         width: 100px;
@@ -365,16 +375,15 @@ h2 {
 }
 
 .pop-up-fail {
+    display: none;
     position: absolute;
-    // display: none;
-    z-index: 999;
-    // bottom: 200px;
-    left: calc((100%)/2 - 30vw);
-    width: 60vw;
+    left: calc((100%)/2 - 25vw);
+    width: 50vw;
     height: 200px;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     position: relative;
+    bottom: 10px;
     .fail-exit-btn {
         position: absolute;
         top: -15px;
@@ -397,7 +406,7 @@ h2 {
     .fail-text {
         color: rgb(0, 0, 0);
         text-align: center;
-        font-size: 35px;
+        font-size: 25px;
     }
     button {
         width: 100px;
@@ -445,11 +454,14 @@ h2 {
    .about__product {
        width: 90%;
    }
-   .form {
-       .pop-up-succes {
-           width: 300px;
-       }
-   }
+   .pop-up-succes {
+    width: 75vw;
+    left: calc((100%/2) - 36vw);
+}
+    .pop-up-fail {
+    width: 75vw;
+    left: calc((100%/2) - 36vw);
+}
 }
 
 

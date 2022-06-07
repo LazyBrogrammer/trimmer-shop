@@ -57,7 +57,6 @@ nav {
   background-color: #e5cfa4;
   position: fixed;
   z-index: 999;
-  position: relative;
 }
 
 nav .languages {
@@ -410,11 +409,27 @@ h2 {
 }
 
 .form form .submit {
-  height: 40px;
+  background-color: #E5CFA4;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
   border-radius: 10px;
+  color: black;
+  font-size: 25px;
+  padding-top: 5px;
+  outline: none;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-.form form input {
+.form form .submit:active {
+  -webkit-transform: scale(1.09);
+          transform: scale(1.09);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.form form .input {
   width: 250px;
   height: 30px;
   border-radius: 5px;
@@ -433,48 +448,48 @@ h2 {
   transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-.form form input:hover, .form form input:focus {
+.form form .input:hover, .form form .input:focus {
   outline: none;
   padding: .2rem 1rem;
   border-radius: 1rem;
   border-color: #E5CFA4;
 }
 
-.form form input::-webkit-input-placeholder {
+.form form .input::-webkit-input-placeholder {
   color: #777;
 }
 
-.form form input:-ms-input-placeholder {
+.form form .input:-ms-input-placeholder {
   color: #777;
 }
 
-.form form input::-ms-input-placeholder {
+.form form .input::-ms-input-placeholder {
   color: #777;
 }
 
-.form form input::placeholder {
+.form form .input::placeholder {
   color: #777;
 }
 
-.form form input:focus::-webkit-input-placeholder {
+.form form .input:focus::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
 
-.form form input:focus:-ms-input-placeholder {
+.form form .input:focus:-ms-input-placeholder {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
 
-.form form input:focus::-ms-input-placeholder {
+.form form .input:focus::-ms-input-placeholder {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
 }
 
-.form form input:focus::placeholder {
+.form form .input:focus::placeholder {
   opacity: 0;
   -webkit-transition: opacity .3s;
   transition: opacity .3s;
@@ -482,10 +497,8 @@ h2 {
 
 .pop-up-succes {
   position: absolute;
-  display: none;
-  z-index: 999;
-  left: calc((100%)/2 - 30vw);
-  width: 60vw;
+  left: calc((100%)/2 - 25vw);
+  width: 50vw;
   height: 200px;
   background-color: white;
   border-radius: 20px;
@@ -518,7 +531,7 @@ h2 {
 .pop-up-succes .succes-text {
   color: black;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .pop-up-succes button {
@@ -526,14 +539,15 @@ h2 {
 }
 
 .pop-up-fail {
+  display: none;
   position: absolute;
-  z-index: 999;
-  left: calc((100%)/2 - 30vw);
-  width: 60vw;
+  left: calc((100%)/2 - 25vw);
+  width: 50vw;
   height: 200px;
   background-color: white;
   border-radius: 20px;
   position: relative;
+  bottom: 10px;
 }
 
 .pop-up-fail .fail-exit-btn {
@@ -562,7 +576,7 @@ h2 {
 .pop-up-fail .fail-text {
   color: black;
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .pop-up-fail button {
@@ -591,8 +605,13 @@ h2 {
   .about__product {
     width: 90%;
   }
-  .form .pop-up-succes {
-    width: 300px;
+  .pop-up-succes {
+    width: 75vw;
+    left: calc((100%/2) - 36vw);
+  }
+  .pop-up-fail {
+    width: 75vw;
+    left: calc((100%/2) - 36vw);
   }
 }
 /*# sourceMappingURL=style.css.map */
