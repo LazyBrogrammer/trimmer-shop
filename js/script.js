@@ -16,7 +16,11 @@ let scrollToTop =document.querySelector('.scroll-top'),
     fNamePlace = document.querySelector('.fname-place'),
     price = document.querySelector('.price'),
     succesText = document.querySelector('.succes-text'),
-    failText = document.querySelector('.fail-text')
+    failText = document.querySelector('.fail-text'),
+    exitBtn = document.querySelector('.exit-btn'),
+    popUpSucces = document.querySelector('.pop-up-succes'),
+    popUpFail = document.querySelector('.pop-up-fail'),
+    submitBtn = document.querySelector('.submit');
 
 
 scrollToTop.addEventListener('click', () => {
@@ -144,3 +148,13 @@ let uzb = () => {
 
 
 
+
+submitBtn.addEventListener('click', function(){
+    popUpSucces.classList.remove('hide');
+    popUpSucces.classList.add('show');
+})
+
+exitBtn.addEventListener('click', function(e) {
+    popUpSucces.classList.remove('show')
+    popUpSucces.classList.add('hide');
+})

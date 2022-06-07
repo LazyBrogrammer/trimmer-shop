@@ -495,6 +495,14 @@ h2 {
   transition: opacity .3s;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .pop-up-succes {
   position: absolute;
   left: calc((100%)/2 - 25vw);
@@ -503,9 +511,11 @@ h2 {
   background-color: white;
   border-radius: 20px;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.pop-up-succes .succes-exit-btn {
+.pop-up-succes .exit-btn {
   position: absolute;
   top: -15px;
   right: -15PX;
@@ -515,7 +525,7 @@ h2 {
   background-color: white;
 }
 
-.pop-up-succes .succes-exit-btn img {
+.pop-up-succes .exit-btn img {
   width: 100%;
 }
 
@@ -550,7 +560,7 @@ h2 {
   bottom: 10px;
 }
 
-.pop-up-fail .fail-exit-btn {
+.pop-up-fail .exit-btn {
   position: absolute;
   top: -15px;
   right: -15PX;
@@ -560,7 +570,7 @@ h2 {
   background-color: white;
 }
 
-.pop-up-fail .fail-exit-btn img {
+.pop-up-fail .exit-btn img {
   width: 100%;
 }
 

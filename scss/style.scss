@@ -336,8 +336,14 @@ h2 {
     }
 }
 
+.hide {
+    display: none;
+}
+.show {
+    display: block;
+}
+
 .pop-up-succes {
-    // display: none;
     position: absolute;
     left: calc((100%)/2 - 25vw);
     width: 50vw;
@@ -345,7 +351,8 @@ h2 {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     position: relative;
-    .succes-exit-btn {
+    transition: 1s;
+    .exit-btn {
         position: absolute;
         top: -15px;
         right: -15PX;
@@ -384,7 +391,7 @@ h2 {
     border-radius: 20px;
     position: relative;
     bottom: 10px;
-    .fail-exit-btn {
+    .exit-btn {
         position: absolute;
         top: -15px;
         right: -15PX;
